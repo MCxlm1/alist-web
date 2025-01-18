@@ -8,7 +8,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "~": path.resolve(__dirname, "src"),
-      "@solidjs/router": path.resolve(__dirname, "solid-route/src"),
+      "@solidjs/router": path.resolve(__dirname, "solid-router/src"),
     },
   },
   plugins: [
