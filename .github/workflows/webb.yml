@@ -1,4 +1,4 @@
-name: Build and Deploy to GitHub Pages
+name: Build 和 Deploy to GitHub Pages
 
 on:
   push:
@@ -26,7 +26,7 @@ jobs:
         run: pnpm --version
 
       # 安装依赖并构建项目
-      - name: Install dependencies and build
+      - name: Install dependencies 和 build
         run: |
           pnpm install
           pnpm build
