@@ -33,7 +33,7 @@ jobs:
 
       # 确保 CNAME 文件存在
       - name: Add CNAME file
-        run: echo "github-blog.acofork.us.kg" > dist/CNAME
+        run: echo "git.ali.mcxlmcn.us.kg" > dist/CNAME
 
       # 获取 main 分支的提交信息
       - name: Get latest commit message from main branch
