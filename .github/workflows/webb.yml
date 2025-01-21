@@ -33,7 +33,7 @@ jobs:
 
       # 确保 CNAME 文件存在
       - name: Add CNAME file
-        run: echo "git.ali.mcxlmcn.us.kg" > dist/CNAME
+        run: echo "gitali.mcxlmcn.us.kg" > dist/CNAME
 
       # 获取 main 分支的提交信息
       - name: Get latest commit message from main branch
@@ -48,5 +48,5 @@ jobs:
         with:
           github_token: ${{ secrets.TOKEN }}
           publish_dir: ./dist
-          destination_branch: gh-pages
+          publish_branch: gh-pages
           commit_message: ${{ env.COMMIT_MESSAGE }} # 使用 main 分支的提交信息
