@@ -17,7 +17,7 @@ In the project directory, you can run:
 ### `npm dev` or `npm start`
 
 Runs the app in the development mode.<br>
-Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
+打开 [http://localhost:5173](http://localhost:5173) to view it in the browser.
 
 The page will reload if you make edits.<br>
 
@@ -32,3 +32,4 @@ Your app is ready to be deployed!
 ## Deployment
 
 You can deploy the `dist` folder to any static host provider (netlify, surge, now, etc.)
+test
