@@ -46,7 +46,7 @@ jobs:
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.TOKEN }}
           publish_dir: ./dist
           destination_branch: gh-pages
           commit_message: ${{ env.COMMIT_MESSAGE }} # 使用 main 分支的提交信息
