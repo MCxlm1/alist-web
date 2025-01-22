@@ -17,6 +17,10 @@
     />
 <script src="https://polyfill.alicdn.com/v3/polyfill.min.js?features=String.prototype.replaceAll"></script>
 <style>
+        .mctest {
+        text-align: center;
+        margin-top: 20px;
+        }
 /*白天背景图*/
   .hope-ui-light {
     background-image: url("https://cdnjs.mcxlmcn.us.kg/gh/MCxlm1/cdntest@0.0.1/cdnjpg/1.jpg") !important;
@@ -165,6 +169,30 @@
     <div id="root"></div>
 
     <script src="/src/main.tsx" type="module"></script>
+        <script>
+function measureLoadTime() {
+            var loadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
+            console.log("网页加载时间: " + loadTime + " 毫秒");
+            var loadTimeElement = document.createElement("p");
+            loadTimeElement.textContent = "网页加载时间: " + loadTime + " 毫秒";
+            loadTimeElement.className = "mctest";
+            document.body.appendChild(loadTimeElement);
+        }
+
+        function clearLoadTime() {
+            var elements = document.getElementsByClassName('mctest');
+            while(elements.length > 0){
+                elements[0].parentNode.removeChild(elements[0]);
+            }
+        }
+
+        window.onload = measureLoadTime;
+
+        window.addEventListener('hashchange', function(event) {
+            clearLoadTime();
+            measureLoadTime();
+        });
+    </script>
     <!-- customize body -->
   </body>
 </html>
